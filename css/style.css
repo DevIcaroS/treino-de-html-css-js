@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #676767ef;
+    position: relative;
+    background-image: 
+        radial-gradient(circle at 50% -5%,
+        rgba(255, 255, 255, 0.71),
+        transparent 70%);
+}
+
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+.card{
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 0 6px 30px
+    rgba(0,0,0,0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.subtexto{
+    text-align: justify;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.htmlbutton{
+    display: inline-block;
+    background: rgb(161, 161, 161);
+    color: white;
+    padding: 7px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.htmlbutton:hover{
+    background: rgb(236, 127, 10);
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 0 6px 8px rgba(67, 67, 67, 0.5);
+}
+
+.cssbutton{
+    display: inline-block;
+    background: rgb(161, 161, 161);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cssbutton:hover{
+    background: rgb(67, 152, 237);
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 0 6px 8px rgba(67, 67, 67, 0.5);
+}
+
+.jsbutton{
+    display: inline-block;
+    background: rgb(161, 161, 161);
+    color: white;
+    padding: 7px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.jsbutton:hover{
+    background: rgb(244, 244, 26);
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 0 6px 8px rgba(67, 67, 67, 0.5);
+}
