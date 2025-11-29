@@ -6,15 +6,51 @@ body {
     background: #676767ef;
     position: relative;
     background-image: 
-        radial-gradient(circle at 50% -5%,
-        rgba(255, 255, 255, 0.71),
+        radial-gradient(circle at 50% -5%, rgb(234, 234, 234),
         transparent 70%);
+    transition: background 0.4s ease;
+}
+
+body:has(.htmlbutton:hover){
+    background: rgb(236, 127, 10);
+    background-image: 
+        radial-gradient(circle at left, rgb(241, 233, 70),
+        transparent 70%);
+}
+
+body:has(.cssbutton:hover){
+    background: rgb(67, 152, 237);
+    background-image: 
+        radial-gradient(circle at bottom, rgb(246, 242, 246),
+        transparent 100%);
+}
+
+body:has(.jsbutton:hover){
+    background: rgba(234, 234, 7, 0.845);
+    background-image: 
+        radial-gradient(circle at right, rgb(255, 242, 157),
+        transparent 100%);
+}
+
+.card:has(.jsbutton:hover){
+    box-shadow: -20px 0 30px rgba(0,0,0,0.4);
+}
+
+.card:has(.htmlbutton:hover){
+    box-shadow: 20px 0 30px rgba(0,0,0,0.4);
+}
+
+.card:has(.cssbutton:hover){
+    box-shadow: 2px -15px 30px rgba(0,0,0,0.4);
+}
+
+.pergunta{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .titulo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    background-color: white;
 }
 
 .card{
@@ -22,8 +58,7 @@ body {
     padding: 40px;
     width: 350px;
     border-radius: 30px;
-    box-shadow: 0 6px 30px
-    rgba(0,0,0,0.5);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.5);
     text-align: center;
     display: flex;
     flex-direction: column;
